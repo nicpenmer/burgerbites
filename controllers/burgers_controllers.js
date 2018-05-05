@@ -36,7 +36,7 @@ router.post("/api/new", function(req, res) {
 
 // Put/Update/Eat a single burger
 router.put("/api/eat/:id", function(req, res) {
-	burger.eatBurger(req.params.id, function(err, result) {
+	burger.eatsBurger(req.params.id, function(err, result) {
 		if (err) {
 			console.log('Error occurred while eating burger:' + req.params.id);
 			return res.status(500).end();
