@@ -12,16 +12,21 @@ img {
 	transform: translate(-50%);
 }
 
-.app-title {
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
 	color: rgb(10, 10, 10);
 	font-size: 30px;
 }
 
-span.availBurger {
+span.availableBurger {
 	display: inline-block;
 }
 
-.availBurger {
+.availbleBurger {
 	padding: 10px;
 	background-color: #eee;
 	width: 300px;
@@ -35,9 +40,11 @@ span.availBurger {
 .devouredBurger {
 	min-width: 300px;
 	text-align: left;
-	/*background-color: #eee;*/
 }
 
-.burgers-avail {
+#burgerName {
+    color: black;
+}
+.burgersAvailable {
 	margin-right: 30px;
 }

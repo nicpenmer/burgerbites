@@ -1,5 +1,5 @@
 <img src="/assets/img/burger.png">
-<h1 class="app-title text-center">Eat-Da-Burger!</h1>
+<h1 class="title text-center">Eat-Da-Burger!</h1>
 
 <div class="row d-flex justify-content-center">
 	<div class="burgers-avail">
@@ -8,7 +8,7 @@
 			{{!-- Use Helpers notDevoured and isDevoured to split the burgers array --}}
 			{{#notDevoured devoured}}
 			<div>
-				<span class="availBurger">{{id}}. {{burger_name}}</span>
+				<span class="availableBurger">{{id}}. {{burger_name}}</span>
 				<button class="eatBurger" data-burgerid="{{id}}">Devour it!</button>
 			</div>
 			{{/notDevoured}}
@@ -31,5 +31,5 @@
 	  <textarea id="burgerName" type="text" name="burger"></textarea><br/>
 	  <button type="submit" class="btn btn-primary">Submit</button>
 	</form>
-	<p class="text-center">Enter a burger you want to eat. Click the "Submit" button.</p>
+	<p class="text-center">Enter a burger. Click "Submit".</p>
 </div>
