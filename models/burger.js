@@ -1,5 +1,5 @@
 // Handle click event when a burger has been devoured
-$(".eatBurger").on('click', function(event) {
+$(".eatsBurger").on('click', function(event) {
 	event.preventDefault();
 
 	var id = $(this).data("burgerid");
@@ -26,3 +26,4 @@ $(".add-burger").on('submit', function(event) {
 			location.reload();
 		});
 });
+
