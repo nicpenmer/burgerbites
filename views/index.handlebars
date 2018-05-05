@@ -1,0 +1,35 @@
+<img src="/assets/img/burger.png">
+<h1 class="app-title text-center">Eat-Da-Burger!</h1>
+
+<div class="row d-flex justify-content-center">
+	<div class="burgers-avail">
+		<h2>Available Burgers:</h2>
+		{{#each burgers}}
+			{{!-- Use Helpers notDevoured and isDevoured to split the burgers array --}}
+			{{#notDevoured devoured}}
+			<div>
+				<span class="availBurger">{{id}}. {{burger_name}}</span>
+				<button class="eatBurger" data-burgerid="{{id}}">Devour it!</button>
+			</div>
+			{{/notDevoured}}
+		{{/each}}
+	</div>
+	<div class="burgers-devoured">
+		<h2>Devoured Burgers:</h2>
+		{{#each burgers}}
+			{{#isDevoured devoured}}
+			<div>
+				<button class="devouredBurger" disabled="disabled">{{id}}. {{burger_name}}</button>
+			</div>
+			{{/isDevoured}}
+		{{/each}}
+	</div>
+</div>
+
+<div align="center">
+	<form action="/api/new" method="POST" class="add-burger">
+	  <textarea id="burgerName" type="text" name="burger"></textarea><br/>
+	  <button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	<p class="text-center">Enter a burger you want to eat. Click the "Submit" button.</p>
+</div>

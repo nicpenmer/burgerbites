@@ -1,0 +1,43 @@
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	background-color: #f1deb7;
+}
+
+img {
+	width: 345px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.app-title {
+	color: rgb(10, 10, 10);
+	font-size: 30px;
+}
+
+span.availBurger {
+	display: inline-block;
+}
+
+.availBurger {
+	padding: 10px;
+	background-color: #eee;
+	width: 300px;
+	margin: 10px;
+}
+
+.eatBurger {
+	margin-left: 20px;
+}
+
+.devouredBurger {
+	min-width: 300px;
+	text-align: left;
+	/*background-color: #eee;*/
+}
+
+.burgers-avail {
+	margin-right: 30px;
+}
